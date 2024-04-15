@@ -1,0 +1,142 @@
+html {
+    background-color: lightsteelblue;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Courier, monospace;
+    padding: 5px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+p {
+    border: 3px solid maroon;
+    background-color:beige;;
+    padding: 5px;
+    margin: 10px;
+    font-size: large;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.navgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: aliceblue;
+    border: 3px solid black;
+    list-style-type: none;
+    padding: 10px;
+}
+.navgrid li{
+    display: grid;
+  place-items: center;
+}
+
+.imggrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    margin: 50px;
+}
+
+.skip {
+    visibility: visible;
+}
+
+.curritem {
+    font-weight: bold;
+    border: 3px black solid;
+    padding: 5px;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a {
+    position: absolute; 
+    top: -40px;
+}
+  
+.skip a:focus {
+    position: absolute; 
+    top: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+    .imggrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px;
+    }
+
+    .navgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        background-color: aliceblue;
+        border: 3px solid black;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    html {
+        background-color: cadetblue;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .imggrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        margin: 50px;
+    }
+
+    .navgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        background-color: aliceblue;
+        border: 3px solid black;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    html {
+        background-color: cadetblue;
+    }
+}
